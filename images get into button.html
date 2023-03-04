@@ -1,0 +1,21 @@
+<script>
+    function showHide(elementid){
+    if (document.getElementById(elementid).style.display == 'none'){
+    document.getElementById(elementid).style.display = '';
+    } else {
+    document.getElementById(elementid).style.display = 'none';
+    }
+    }
+    
+    function hideShow(elementid){
+    if (document.getElementById(elementid).style.display == ''){
+    document.getElementById(elementid).style.display = 'none';
+    } else {
+    document.getElementById(elementid).style.display = '';
+    }
+    }
+    </script>
+    
+    
+    <img id="on" src="images/off_bts.png" width="140" height="132" onClick="javascript:hideShow('on'); javascript:showHide('off'); javascript:playAudio()" alt="on">
+    <img id="off" src="images/on_Button.png" width="140" height="132" onClick="javascript:hideShow('off'); javascript:showHide('on')" style="display:none;" alt="off">
